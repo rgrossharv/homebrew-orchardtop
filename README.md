@@ -17,7 +17,7 @@ brew tap rgrossharv/orchardtop
 brew install orchardtop
 ```
 
-OrchardTop needs an Apple Silicon Mac. It does not support Intel Macs yet.
+OrchardTop needs an Apple Silicon Mac. You may have to allow brew to trust the tap upon install.
 
 ## Update the formula
 
