@@ -4,16 +4,17 @@ class Orchardtop < Formula
 
   url "https://github.com/rgrossharv/orchardtop.git",
       using: :git,
-      tag: "v1.4.8",
-      revision: "fbef0ab5a0b8eef1dabfd1c877283fc730119570"
+      tag: "v1.4.11",
+      revision: "8842dbe37d09c7c304194aac5aca08be1d255742"
 
-  version "1.4.8"
+  version "1.4.11"
   license "Apache-2.0"
 
   depends_on arch: :arm64
+  depends_on "gcc@15"
 
   def install
-    system "make", "QUIET=true"
+    system "make", "QUIET=true", "CXX=#{Formula["gcc@15"].opt_bin}/g++-15"
 
     bin.install "bin/orchardtop"
     bin.install "otop"
