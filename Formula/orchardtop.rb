@@ -1,16 +1,15 @@
 class Orchardtop < Formula
-  desc "Pretty system monitor for Apple Silicon Macs"
+  desc "System monitor with Apple Silicon support"
   homepage "https://github.com/rgrossharv/orchardtop"
 
   url "https://github.com/rgrossharv/orchardtop.git",
       using: :git,
-      tag: "v1.4.11",
-      revision: "8842dbe37d09c7c304194aac5aca08be1d255742"
+      tag: "v1.4.12",
+      revision: "68421024fa1f1b6483acbd4ee2aff93c3d2c2a07"
 
-  version "1.4.11"
+  version "1.4.12"
   license "Apache-2.0"
 
-  depends_on arch: :arm64
   depends_on "gcc@15"
 
   def install
