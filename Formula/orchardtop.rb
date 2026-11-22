@@ -4,10 +4,10 @@ class Orchardtop < Formula
 
   url "https://github.com/rgrossharv/orchardtop.git",
       using: :git,
-      tag: "v1.4.14",
-      revision: "30eb5d2922217373d769f051618fd1b675b169ce"
+      tag: "v1.4.15",
+      revision: "826bdf8e94d04d766a6546f08d7022015fd37ffe"
 
-  version "1.4.14"
+  version "1.4.15"
   license "Apache-2.0"
 
   depends_on "gcc@15"
